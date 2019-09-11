@@ -11,12 +11,16 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="LIHAT DATA"
         android:textColor="#FAFAFA"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="461dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView4"
