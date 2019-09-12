@@ -60,7 +60,7 @@
         app:srcCompat="@drawable/ic_group_black_24dp" />
 
     <EditText
-        android:id="@+id/tfInputTglLahir"
+        android:id="@+id/tfInputTglLahirUp"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
