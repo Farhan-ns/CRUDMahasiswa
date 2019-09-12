@@ -25,21 +25,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintEnd_toStartOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toBottomOf="@+id/nomorinputdetail"
+        app:layout_constraintEnd_toStartOf="@+id/nomorinputdetail"
+        app:layout_constraintTop_toTopOf="@+id/nomorinputdetail"
         app:srcCompat="@drawable/ic_create_black_24dp" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/nomorinputdetail"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginTop="16dp"
         android:ellipsize="none"
         android:ems="10"
         android:inputType="textPersonName"
         android:scrollbarSize="4dp"
-        android:text="Nomor"
+        android:text="nomorinput"
         android:textColor="#FAFAFA"
         app:layout_constraintEnd_toEndOf="@+id/imageView9"
         app:layout_constraintHorizontal_bias="0.494"
@@ -51,78 +51,78 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText2"
-        app:layout_constraintEnd_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toBottomOf="@+id/namainputdetail"
+        app:layout_constraintEnd_toStartOf="@+id/namainputdetail"
+        app:layout_constraintTop_toTopOf="@+id/namainputdetail"
         app:srcCompat="@drawable/ic_group_black_24dp" />
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/namainputdetail"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Nama"
         android:textColor="#FAFAFA"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/nomorinputdetail"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintStart_toStartOf="@+id/nomorinputdetail"
+        app:layout_constraintTop_toBottomOf="@+id/nomorinputdetail" />
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText3"
-        app:layout_constraintEnd_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toTopOf="@+id/editText3"
+        app:layout_constraintBottom_toBottomOf="@+id/tanggallahirinputdetail"
+        app:layout_constraintEnd_toStartOf="@+id/tanggallahirinputdetail"
+        app:layout_constraintTop_toTopOf="@+id/tanggallahirinputdetail"
         app:srcCompat="@drawable/ic_date_range_black_24dp" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tanggallahirinputdetail"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Tanggal Lahir"
         android:textColor="#FAFAFA"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/namainputdetail"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="@+id/namainputdetail"
+        app:layout_constraintTop_toBottomOf="@+id/namainputdetail" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText5"
-        app:layout_constraintEnd_toStartOf="@+id/editText5"
-        app:layout_constraintTop_toTopOf="@+id/editText5"
+        app:layout_constraintBottom_toBottomOf="@+id/alamatinputdetail"
+        app:layout_constraintEnd_toStartOf="@+id/alamatinputdetail"
+        app:layout_constraintTop_toTopOf="@+id/alamatinputdetail"
         app:srcCompat="@drawable/ic_place_black_24dp" />
 
     <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/jeniskelamininputdetail"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Jenis Kelamin"
         android:textColor="#FAFAFA"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/tanggallahirinputdetail"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintStart_toStartOf="@+id/tanggallahirinputdetail"
+        app:layout_constraintTop_toBottomOf="@+id/tanggallahirinputdetail" />
 
     <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/alamatinputdetail"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -130,18 +130,18 @@
         android:inputType="textPersonName"
         android:text="Alamat"
         android:textColor="#FAFAFA"
-        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="@+id/jeniskelamininputdetail"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/jeniskelamininputdetail" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText4"
-        app:layout_constraintEnd_toStartOf="@+id/editText4"
-        app:layout_constraintTop_toTopOf="@+id/editText4"
+        app:layout_constraintBottom_toBottomOf="@+id/jeniskelamininputdetail"
+        app:layout_constraintEnd_toStartOf="@+id/jeniskelamininputdetail"
+        app:layout_constraintTop_toTopOf="@+id/jeniskelamininputdetail"
         app:srcCompat="@drawable/ic_person_black_24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,8 +7,8 @@ import android.os.Bundle;
 public class detaildata extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle saveinputdInstanceState) {
+        super.onCreate(saveinputdInstanceState);
         setContentView(R.layout.activity_detaildata);
     }
 }
