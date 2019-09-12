@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -31,7 +32,9 @@ public class ListDataActivity extends AppCompatActivity {
             @Override
             public void onClick(int position) {
                 ListDataAdapter.ViewHolder v = (ListDataAdapter.ViewHolder) recyclerView.findViewHolderForLayoutPosition(position);
-                getSupportActionBar().setTitle(v.bean.getAlamat());
+                Intent intent = new Intent(ListDataActivity.this, DetailDataActivty.class);
+                intent.putExtra("mahasiswa", v.bean);
+                startActivity(intent);
             }
         });
 

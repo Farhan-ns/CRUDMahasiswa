@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    tools:context=".InputDataActivity">
+
+    <EditText
+        android:id="@+id/tfInputJenKel"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        android:ellipsize="none"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scrollbarSize="4dp"
+        android:hint="Jenis Kelamin"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/tfInputAlamat"
+        app:layout_constraintEnd_toEndOf="@+id/tfInputAlamat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView19" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tfNomorInput"
+        app:layout_constraintEnd_toStartOf="@+id/tfNomorInput"
+        app:layout_constraintTop_toTopOf="@+id/tfNomorInput"
+        app:srcCompat="@drawable/ic_create_black_24dp" />
+
+    <EditText
+        android:id="@+id/tfInputAlamat"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="144dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Alamat"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tfNamaInput"
+        app:layout_constraintEnd_toStartOf="@+id/tfNamaInput"
+        app:layout_constraintTop_toTopOf="@+id/tfNamaInput"
+        app:srcCompat="@drawable/ic_group_black_24dp" />
+
+    <EditText
+        android:id="@+id/tfInputTglLahir"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tanggal Lahir"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/tfInputJenKel"
+        app:layout_constraintEnd_toEndOf="@+id/tfInputJenKel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView18" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tfInputJenKel"
+        app:layout_constraintEnd_toStartOf="@+id/tfInputJenKel"
+        app:layout_constraintTop_toTopOf="@+id/tfInputJenKel"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+    <EditText
+        android:id="@+id/tfNamaInput"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nama"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/tfInputTglLahir"
+        app:layout_constraintEnd_toEndOf="@+id/tfInputTglLahir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView17" />
+
+    <EditText
+        android:id="@+id/tfNomorInput"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nomot"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/tfNamaInput"
+        app:layout_constraintEnd_toEndOf="@+id/tfNamaInput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tfNamaInput" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tfInputAlamat"
+        app:layout_constraintEnd_toStartOf="@+id/tfInputAlamat"
+        app:layout_constraintTop_toTopOf="@+id/tfInputAlamat"
+        app:srcCompat="@drawable/ic_place_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tfInputTglLahir"
+        app:layout_constraintEnd_toStartOf="@+id/tfInputTglLahir"
+        app:layout_constraintTop_toTopOf="@+id/tfInputTglLahir"
+        app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/tfNomorInput"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="@+id/tfNomorInput"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/student1" />
+
+    <!--<ImageView
+        android:id="@+id/imagesave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textSave"
+        app:layout_constraintEnd_toStartOf="@+id/textSave"
+        app:layout_constraintTop_toTopOf="@+id/textSave"
+        app:srcCompat="@drawable/ic_save_black_24dp" />-->
+
+    <TextView
+        android:id="@+id/textSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="92dp"
+        android:text="SIMPAN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_save_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
