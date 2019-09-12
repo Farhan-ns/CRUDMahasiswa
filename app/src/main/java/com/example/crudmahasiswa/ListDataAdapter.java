@@ -16,6 +16,7 @@ public class ListDataAdapter extends RecyclerView.Adapter<ListDataAdapter.ViewHo
 
     List<MahasiswaBean> beanList;
     private Listener listener;
+    private Listener longClickListener;
 
     public ListDataAdapter(List<MahasiswaBean> beanList) {
         this.beanList = beanList;
@@ -48,6 +49,15 @@ public class ListDataAdapter extends RecyclerView.Adapter<ListDataAdapter.ViewHo
                 }
             }
         });
+        card.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if (longClickListener != null) {
+                    longClickListener.onClick(position);
+                }
+                return true;
+            }
+        });
     }
 
     @Override
@@ -57,6 +67,9 @@ public class ListDataAdapter extends RecyclerView.Adapter<ListDataAdapter.ViewHo
 
     public void setListener(Listener listener) {
         this.listener = listener;
+    }
+    public void setLongClickListener(Listener listener) {
+        this.longClickListener = listener;
     }
 
     public interface Listener {

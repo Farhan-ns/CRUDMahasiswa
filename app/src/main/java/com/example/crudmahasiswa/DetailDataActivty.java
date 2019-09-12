@@ -28,7 +28,7 @@ public class DetailDataActivty extends AppCompatActivity {
 
         MahasiswaBean bean = getIntent().getParcelableExtra("mahasiswa");
 
-        nomorInput.setText(bean.getIdMahasiswa());
+        nomorInput.setText(bean.getIdMahasiswa()+"");
         namaInput.setText(bean.getNama());
         tglLahirInput.setText(bean.getTglLahir());
         jenkelInput.setText(bean.getJenKel());
