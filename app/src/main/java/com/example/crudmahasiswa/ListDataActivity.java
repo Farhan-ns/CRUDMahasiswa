@@ -20,7 +20,7 @@ import java.util.List;
 public class ListDataActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    CharSequence[] dialogItems = {"Update", "Delete"};
+    CharSequence[] dialogItems = {"Lihat Data","Update Data", "Delete Data"};
     Context context = this;
 
     @Override
@@ -29,33 +29,34 @@ public class ListDataActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_data);
         recyclerView = findViewById(R.id.recycler_list_data);
 
-        DatabaseHelper db = new DatabaseHelper(this);
+        final DatabaseHelper db = new DatabaseHelper(this);
         List<MahasiswaBean> beanList = db.selectUserData();
         final ListDataAdapter adapter = new ListDataAdapter(beanList);
 
         adapter.setListener(new ListDataAdapter.Listener() {
             @Override
             public void onClick(int position) {
-                ListDataAdapter.ViewHolder v = (ListDataAdapter.ViewHolder) recyclerView.findViewHolderForLayoutPosition(position);
-                Intent intent = new Intent(ListDataActivity.this, DetailDataActivty.class);
-                intent.putExtra("mahasiswa", v.bean);
-                startActivity(intent);
+                gotoDetailActivity(recyclerView, position);
             }
         });
         adapter.setLongClickListener(new ListDataAdapter.Listener() {
             @Override
-            public void onClick(int position) {
+            public void onClick(final int position) {
                 new AlertDialog.Builder(context)
-                        .setTitle("Operation")
+                        .setTitle("Pilihan")
                         .setItems(dialogItems, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 switch(i) {
                                     case 0:
-                                        Intent intent = new Intent(context, UpdateDataActivty.class);
-                                        startActivity(intent);
+                                        gotoDetailActivity(recyclerView, position);
                                         break;
                                     case 1:
+                                        gotoUpdateActivity(recyclerView, position);
+                                        break;
+                                    case 2:
+                                        ListDataAdapter.ViewHolder v = (ListDataAdapter.ViewHolder) recyclerView.findViewHolderForLayoutPosition(position);
+                                        db.delete(Integer.valueOf(v.bean.getIdMahasiswa()));
 
                                         break;
                                 }
@@ -68,8 +69,18 @@ public class ListDataActivity extends AppCompatActivity {
         final LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adapter);
+    }
 
-
-
+    private void gotoDetailActivity(RecyclerView recyclerView, int position) {
+        ListDataAdapter.ViewHolder v = (ListDataAdapter.ViewHolder) recyclerView.findViewHolderForLayoutPosition(position);
+        Intent intent = new Intent(ListDataActivity.this, DetailDataActivty.class);
+        intent.putExtra("mahasiswa", v.bean);
+        startActivity(intent);
+    }
+    private void gotoUpdateActivity(RecyclerView recyclerView, int position) {
+        ListDataAdapter.ViewHolder v = (ListDataAdapter.ViewHolder) recyclerView.findViewHolderForLayoutPosition(position);
+        Intent intent = new Intent(ListDataActivity.this, UpdateDataActivty.class);
+        intent.putExtra("mahasiswa", v.bean);
+        startActivity(intent);
     }
 }

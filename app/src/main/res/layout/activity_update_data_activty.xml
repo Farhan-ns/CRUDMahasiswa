@@ -8,7 +8,7 @@
     tools:context=".UpdateDataActivty">
 
     <EditText
-        android:id="@+id/tfInputJenkel"
+        android:id="@+id/tfInputJenkelUp"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
@@ -19,8 +19,8 @@
         android:scrollbarSize="4dp"
         android:hint="Jenis Kelamin"
         android:textColor="#FAFAFA"
-        app:layout_constraintBottom_toTopOf="@+id/tfInputAlamat"
-        app:layout_constraintEnd_toEndOf="@+id/tfInputAlamat"
+        app:layout_constraintBottom_toTopOf="@+id/tfInputAlamatUp"
+        app:layout_constraintEnd_toEndOf="@+id/tfInputAlamatUp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView19" />
 
@@ -29,13 +29,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tfNomorInput"
-        app:layout_constraintEnd_toStartOf="@+id/tfNomorInput"
+        app:layout_constraintBottom_toBottomOf="@+id/tfNomorInputUp"
+        app:layout_constraintEnd_toStartOf="@+id/tfNomorInputUp"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_create_black_24dp" />
 
     <EditText
-        android:id="@+id/tfInputAlamat"
+        android:id="@+id/tfInputAlamatUp"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginEnd="8dp"
@@ -54,13 +54,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tfInputNama"
-        app:layout_constraintEnd_toStartOf="@+id/tfInputNama"
-        app:layout_constraintTop_toTopOf="@+id/tfInputNama"
+        app:layout_constraintBottom_toBottomOf="@+id/tfInputNamaUp"
+        app:layout_constraintEnd_toStartOf="@+id/tfInputNamaUp"
+        app:layout_constraintTop_toTopOf="@+id/tfInputNamaUp"
         app:srcCompat="@drawable/ic_group_black_24dp" />
 
     <EditText
-        android:id="@+id/tfInputTglLahir"
+        android:id="@+id/tfInputTglLahirUp"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
@@ -69,8 +69,8 @@
         android:inputType="textPersonName"
         android:hint="Tanggal Lahir"
         android:textColor="#FAFAFA"
-        app:layout_constraintBottom_toTopOf="@+id/tfInputJenkel"
-        app:layout_constraintEnd_toEndOf="@+id/tfInputJenkel"
+        app:layout_constraintBottom_toTopOf="@+id/tfInputJenkelUp"
+        app:layout_constraintEnd_toEndOf="@+id/tfInputJenkelUp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView18" />
 
@@ -79,13 +79,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tfInputJenkel"
-        app:layout_constraintEnd_toStartOf="@+id/tfInputJenkel"
-        app:layout_constraintTop_toTopOf="@+id/tfInputJenkel"
+        app:layout_constraintBottom_toBottomOf="@+id/tfInputJenkelUp"
+        app:layout_constraintEnd_toStartOf="@+id/tfInputJenkelUp"
+        app:layout_constraintTop_toTopOf="@+id/tfInputJenkelUp"
         app:srcCompat="@drawable/ic_person_black_24dp" />
 
     <EditText
-        android:id="@+id/tfInputNama"
+        android:id="@+id/tfInputNamaUp"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
@@ -95,13 +95,13 @@
         android:inputType="textPersonName"
         android:hint="Nama"
         android:textColor="#FAFAFA"
-        app:layout_constraintBottom_toTopOf="@+id/tfInputTglLahir"
-        app:layout_constraintEnd_toEndOf="@+id/tfInputTglLahir"
+        app:layout_constraintBottom_toTopOf="@+id/tfInputTglLahirUp"
+        app:layout_constraintEnd_toEndOf="@+id/tfInputTglLahirUp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView17" />
 
     <EditText
-        android:id="@+id/tfNomorInput"
+        android:id="@+id/tfNomorInputUp"
         android:layout_width="350dp"
         android:layout_height="55dp"
         android:layout_marginBottom="20dp"
@@ -109,19 +109,19 @@
         android:inputType="textPersonName"
         android:hint="Nomor"
         android:textColor="#FAFAFA"
-        app:layout_constraintBottom_toTopOf="@+id/tfInputNama"
-        app:layout_constraintEnd_toEndOf="@+id/tfInputNama"
+        app:layout_constraintBottom_toTopOf="@+id/tfInputNamaUp"
+        app:layout_constraintEnd_toEndOf="@+id/tfInputNamaUp"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tfInputNama" />
+        app:layout_constraintStart_toStartOf="@+id/tfInputNamaUp" />
 
     <ImageView
         android:id="@+id/imageView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tfInputAlamat"
-        app:layout_constraintEnd_toStartOf="@+id/tfInputAlamat"
-        app:layout_constraintTop_toTopOf="@+id/tfInputAlamat"
+        app:layout_constraintBottom_toBottomOf="@+id/tfInputAlamatUp"
+        app:layout_constraintEnd_toStartOf="@+id/tfInputAlamatUp"
+        app:layout_constraintTop_toTopOf="@+id/tfInputAlamatUp"
         app:srcCompat="@drawable/ic_place_black_24dp" />
 
     <ImageView
@@ -129,9 +129,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tfInputTglLahir"
-        app:layout_constraintEnd_toStartOf="@+id/tfInputTglLahir"
-        app:layout_constraintTop_toTopOf="@+id/tfInputTglLahir"
+        app:layout_constraintBottom_toBottomOf="@+id/tfInputTglLahirUp"
+        app:layout_constraintEnd_toStartOf="@+id/tfInputTglLahirUp"
+        app:layout_constraintTop_toTopOf="@+id/tfInputTglLahirUp"
         app:srcCompat="@drawable/ic_date_range_black_24dp" />
 
     <ImageView
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toEndOf="@+id/tfNomorInput"
+        app:layout_constraintEnd_toEndOf="@+id/tfNomorInputUp"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -77,6 +77,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = getReadableDatabase();
         ContentValues values = new ContentValues();
         values.put(KEY_NAMA_MAHASISWA, bean.getNama());
+        values.put(KEY_TGL_LAHIR_MAHASISWA, bean.getTglLahir());
+        values.put(KEY_JK_MAHASISWA, bean.getJenKel());
+        values.put(KEY_ALAMAT_MAHASISWA, bean.getAlamat());
         String whereClause = KEY_ID_MAHASISWA + " = '" + bean.getIdMahasiswa() + "'";
         db.update(TABLE_MAHASISWA, values, whereClause, null);
     }
