@@ -73,5 +73,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return list;
     }
 
+    public void update(MahasiswaBean bean) {
+        SQLiteDatabase db = getReadableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(KEY_NAMA_MAHASISWA, bean.getNama());
+        String whereClause = KEY_ID_MAHASISWA + " = '" + bean.getIdMahasiswa() + "'";
+        db.update(TABLE_MAHASISWA, values, whereClause, null);
+    }
+
+    public void delete(int idMahasiswa) {
+        SQLiteDatabase db = getWritableDatabase();
+        String whereClause = KEY_ID_MAHASISWA + " = '" + idMahasiswa + "'";
+        db.delete(TABLE_MAHASISWA, whereClause, null);
+    }
+
 
 }
